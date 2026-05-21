@@ -1,0 +1,65 @@
+{
+ "signatures": [
+  {
+   "keyid": "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2",
+   "sig": "3044022045b89d0824be55148a7472bc807429341b1794d57e8e7edf0870ff93860cd16d0220668b6a23899ea668732095a531170b69516c7fc0aa62b583194efc01a455b578"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-05-21T14:19:14Z",
+  "keys": {
+   "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmcIqt4wpIdBCFSZv7EuQkTr7lHjR\nkyR5EgRkaB5Am9Zc61orKQc9DiOTs5e9d84px3ebGh1NhzMGBUZHiGB1ow==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@arlosi"
+   },
+   "f664fed1e5eaecba767d610422751c24e7b40f2ee4454070fc8dfeba79fea665": {
+    "keytype": "rsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnt7B/6QCEwJ2v/upPAs\nbW2JzWPgEjIHxnuq07p/aZCyZnfPP3MqvaOM4l3eL3WUDRut5+MWpjVRVG+TtrW8\nintmY+EqxzEcVLRLDGZ1q3vKQn7R3hey0i4hbDxlvt0mQl4QABqbSJLt9GXHjCt8\nqkDj+RJ+3fa6w/sW5VmfE3y2AZZ1Rg8Zuh1Qyt5RT78n/fgB6b0/NqlKpMWRdVGv\nON03j51sLwBpVu4OCHPBLrn3pSK7YnI8BuXBKTX+bsCUFKJjwzU4QdbbNhPozMbk\n83qvRGXF7fX7QKJ47o83cIl7eFIVeBZoupoCui/fOJctr5kFa/8+ENVUIoygmK6n\njQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "rsa-pkcs1v15-sha256",
+    "x-tuf-on-ci-online-uri": "gcpkms:projects/rust-tuf/locations/global/keyRings/release-keys/cryptoKeys/cosign-key/cryptoKeyVersions/1"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "f664fed1e5eaecba767d610422751c24e7b40f2ee4454070fc8dfeba79fea665"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "f664fed1e5eaecba767d610422751c24e7b40f2ee4454070fc8dfeba79fea665"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
