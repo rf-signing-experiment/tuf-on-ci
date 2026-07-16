@@ -2,15 +2,43 @@
  "signatures": [
   {
    "keyid": "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2",
-   "sig": "3046022100b753235f99145e6e9b58d5fa16eeceef167eb9c805317c04713af44d83504249022100b21f3ac0dbc3b01adc0eb683df8a86feda3455af5d4eba0d7d7d99e4cdfe1f73"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2027-05-21T14:19:14Z",
+  "delegations": {
+   "keys": {
+    "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEmcIqt4wpIdBCFSZv7EuQkTr7lHjR\nkyR5EgRkaB5Am9Zc61orKQc9DiOTs5e9d84px3ebGh1NhzMGBUZHiGB1ow==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@arlosi"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "14dd926386af38cc827274b711746dc1eb356fe98e3a7ea72d817b692024e4f2"
+     ],
+     "name": "crates",
+     "paths": [
+      "crates/*",
+      "crates/*/*",
+      "crates/*/*/*",
+      "crates/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2027-07-16T13:41:46Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 1,
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
